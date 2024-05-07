@@ -1,0 +1,115 @@
+input[type=text], input[type=password],select, textarea, radio {
+        
+    width: 100%; 
+    padding: 8px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom:16px;
+    resize: vertical 
+    }
+input[type=text]:focus, input[type=password]:focus, textarea:focus{
+    border: 5px solid pink; 
+    border-radius: 4px; 
+}
+
+label{
+    display: block;
+    font-size: medium ;
+    font-weight: bold;
+     }
+    
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    }
+    
+input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    }
+            
+input[type=submit]:hover {
+    background-color: #4905CC;
+    }
+
+input[type=reset]:hover {
+    background-color: #45a049;
+    }
+        
+.container {
+    border-radius: 5px;
+    background-color: #a2a2a2;
+    padding: 20px;
+    width: 40%;
+    margin: 20px auto;
+    box-shadow: #ccc;
+    }
+              
+#personales{
+    border: 1px solid #ccc; 
+    border-radius: 25px; 
+    padding: 20px;
+    margin : 15px;
+}
+              
+#edad{
+    clear:both;
+    border: 1px solid #ccc; 
+    border-radius: 25px; 
+    padding: 20px ;
+    margin : 15px;
+    }
+
+#comentarios{
+    clear: both;
+    width: 90%;
+    border: 1px solid #ccc; 
+    border-radius: 25px; 
+    padding: 20px;
+    margin : 15px;
+    }
+
+
+#sugerencias{
+    clear: both;
+    width: auto;
+    border: 1px solid #ccc; 
+    border-radius: 25px; 
+    padding: 20px;
+    margin : 15px;
+    }
+#envio{
+        clear: both;
+        width: auto;
+        border: 1px solid #ccc; 
+        border-radius: 25px; 
+        padding: 20px;
+        margin : 15px;
+        }
+
+.linea{
+display: inline-block;
+width: 15%;
+}
+    
+h2{
+    text-align: center;
+    }
+    
+body{
+    background-color: purple;
+    }
+    
+    
+    
+        

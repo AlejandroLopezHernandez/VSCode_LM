@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Ejercicios Formularios/validacion5.js"></script>
+    <title> Ejercicio 5</title>
+</head>
+<body>
+    <h2> Ejercicio 5</h2>
+    <form action="/Ejercicios Formularios/datos_enviados.html" onsubmit="return validar5()">
+        <fieldset>
+            <legend> Completar</legend>
+            <p>
+            <label> Selecciona un color </label>
+            <input type="color">
+            </p>
+            <p>
+                <label for="nombre"> Nombre:</label>
+                <input type="text" id="nombre">
+            </p>
+            <p>
+                <label for="apellidos"> Apellidos: </label>
+                <input type="text" id="apellidos">
+            </p>
+            <p>
+                <label for="telefono"> Teléfono: </label>
+                <input type="tel" id="telefono">
+            </p>
+            <p>
+                <label for="asignaturas" name="asignaturas">
+                <input type="checkbox" name="asignaturas"> Lengua
+                <input type="checkbox" name="asignaturas"> Matemáticas
+                <input type="checkbox" name="asignaturas"> Historia
+                <input type="checkbox" name="asignaturas"> Geografía
+                </label>
+            </p>
+            <p>
+                <label> Elige un fichero </label>
+                <input type="file">
+            </p>
+            <p>
+                <textarea name="areatexto" rows="6" cols="50"> Utilice este cuadro para escribit</textarea>
+            </p>
+            <p>
+                <label for="imagenes">
+                    <input type="radio" name="imagenes"> JPG
+                    <input type="radio" name="imagenes"> PNG
+                </label>
+            </p>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

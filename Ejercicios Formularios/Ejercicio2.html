@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Ejercicios Formualrios/validar2.js"></script>
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h2> Ejercicio 2: Formulario</h2>
+    <form action="/Ejercicios Formualrios/enviado.html" onsubmit="return validar2()">
+        <fieldset>
+            <legend>Indique sus preferencias por favor </legend>
+            <p>
+                <label for="fecha">Elige una fecha</label>
+                <input type="date" name="fecha" id="fecha">
+            </p>
+           <p>
+            <label for="fichero"> Elige un fichero
+            <input type="file" name="fichero" id="file" placeholder="Examinar...">
+            </label>
+           </p>
+            <p>
+                <label for="procesador">
+                <input type="radio" name="procesador" value="procesadoramd"> AMD
+                <input type="radio" name="procesador" value="procesadori5"> Intel i5
+                <input type="radio" name="procesador" value="procesadori7"> Intel i7
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            <label for="asignatura">
+                <input type="radio" name="asignatura" value="matematicas"> Matemáticas
+                <input type="radio" name="asignatura" value="historia">Historia
+                <input type="radio" name="asignatura" value="geografia">Geografía
+                <input type="radio" name="asignatura" value="lengua">Lengua
+            </label>
+            <p>
+                <label for="nombre">
+                    Nombre <input type="text" id="nombre">
+                </label>
+            </p>
+            <p>
+                <label for="apellidos">
+                Apellidos <input type="text" id="apellidos">
+                </label>
+            </p>
+            <p>
+                <label for="direccion">
+                    Dirección <input type="direccion" id="direccion">
+                </label>
+            </p>
+           <p>
+            Eliga un color
+            <input type="color">
+           </p>
+           <p>
+            <textarea name="area_texto" rows="6" cols="59">
+                Escriba algo aquí
+            </textarea>
+           </p>
+           <p>
+            <label for="fecha2"> Elija una fecha:</label>
+            <input type="date" name="fecha">
+           </p>
+           <select name="idioma">
+            <option value="ingles">Inglés</option>
+            <option value="frances">Francés</option>
+            <option value="aleman">Alemán</option>
+           </select>
+           <p>
+            <label for="hora">Indique la hora</label>
+            <input type="time" name="hora">
+           </p>
+           <p>
+            <label for="fichero2">Suba un fichero</label>
+            <input type="file" name="fichero2">
+           </p>
+           <p>
+            <label for="sexo">
+                <input type="checkbox" id="mujer" name="sexo" value="sexomujer" class="sexo"> Mujer
+                <input type="checkbox" name="sexo" value="sexohombre" class="sexo">Hombre
+            </label>
+           </p>
+           <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

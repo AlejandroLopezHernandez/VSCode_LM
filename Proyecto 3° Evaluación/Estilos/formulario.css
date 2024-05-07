@@ -1,0 +1,75 @@
+p{
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+h2{
+    font-size:xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;  
+	color:deepskyblue;
+}
+
+*{
+    background-color: rgb(208, 238, 248);
+    background-size: auto;
+    letter-spacing: 0.5 px;
+    margin-top: 0.5cm;
+    margin-right: 0.5cm;
+    margin-left: 0.5cm;
+    margin-bottom: 0.5cm;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0%
+    
+}
+
+.background{
+    background:  rgb(208, 238, 248);
+    background-blend-mode: hard-light;
+    background-size: cover;
+}
+.formnav_list{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger;
+    font-style: unset;
+    font-weight: bold;
+
+}
+.formnav_list a{
+    color: deepskyblue;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario1{
+    border-style:double;
+}
+#formulario2{
+    border-style: double;
+}
+#enviar1:hover{
+background-color:yellowgreen;
+
+}
+#borrar1:hover{
+background-color: tomato;
+}
+#enviar2:hover{
+    background-color: yellowgreen;
+}
+#borrar2:hover{
+    background-color: tomato;
+}

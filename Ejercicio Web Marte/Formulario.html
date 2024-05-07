@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Marte</title>
+    <link rel="stylesheet" href="/Ejercicio Web Marte/estilo_formulario.css">
+    <script src="/Ejercicio Web Marte/validacion_formulario.js"></script> <!-- Así se adjunta un documento JavaScript-->
+</head>
+<body>
+    <p>
+        <h2>
+            ¿Te gustaría vivir en Marte?
+        </h2>
+    </p>
+    <p>
+        ¿Te gustaría vivir en el planeta Rojo? Con la montaña más alta del sistema solar
+    </p> <!-- El formulario se envía a otra página web con el action-->
+    <form action="/Ejercicio Web Marte/envío_datos.html" id="formulario_principal" method="get" onsubmit="return validar_formulario()">
+        <p>
+            <fieldset id="personal">
+                <legend> Rellena estos campos si quieres vivir en Marte</legend>
+                <label for="Nombre y Apellidos"> Nombre y Apellidos</label> <!-- El label es el texto del formulario-->
+                <input type="text" id="nombre_y_apellidos" name="Nombre y Apellidos" required placeholder="Introducir Nombre y Apellidos..." paattern="[A-Za-z]" autofocus="autofocus">
+        </p> <!-- El input hace referencia al campo dónde uno escribe-->
+        <p>
+            <label for="Email">Email </label>
+            <input type="email" id="email" name="Email" placeholder="Introduce tu correo electrónico">
+        </p>
+        <p>
+            <label for="ccaa">Comunidad Autónoma</label required>
+            <select id="ccaa" name="Comunidad Autónoma">
+                <option value="seleccionar">Selecciona tu comunidad autónoma</option>
+                <option value="Galicia">Galicia</option>
+                <option value="Asturias">Asturias</option>
+                <option value="Cantabria">Cantabria</option>
+                <option value="Euskadi">País Vasco</option>
+                <option value="Navarra">Comunidad Foral de Navarra</option>
+                <option value="Aragon">Aragón</option>
+                <option value="Cataluyna">Cataluña</option>
+                <option value="Castilla_La_Vieja">Castilla y León</option>
+                <option value="Madrid">Comunidad de Madrid</option>
+                <option value="Castilla_la_Nueva">Castilla la Mancha</option>
+                <option value="Valencia">Comunidad Valenciana</option>
+                <option value="Balears">Islas Baleares</option>
+                <option value="Murcia">Región de Murcia</option>
+                <option value="Andalucia">Andalucía</option>
+                <option value="Canarias">Islas Canarias</option>
+                <option value="Extremadura">Extremadura</option>
+                <option value="Melilla">Ciudad Autónoma de Melilla</option>
+                <option value="Ceuta">Ciudad Autónoma de Ceuta</option>
+            </select>
+            <p>
+                <label for="tel"> Introduce tu número de teléfono</label>
+                <input type="tel" class="telefono" name="telefono" id="tel" placeholder="Introduce tu número de teléfono" >
+            </p>
+            <p>
+                <label>Indica si usted es personal o profesional</label><br>
+                <input type="radio" class="linea" value="personal" name="pers_pro" id="perso"/> <span>Personal</span>
+                <input type="radio" class="linea" value="pro" name="pers_pro" id="pro"/> <span>Profesional</span>
+            </p> <!-- Los botones de tipo radio SIEMPRE van con el mismo nombre-->
+        </p>
+        <label><input type="checkbox" value="Aceptar" name="Aceptar" id="aceptar" />Aceptar condiciones</label>
+            <p>
+        <label><input type="checkbox" value="Recibir" name="recibir" id="recibir" />Recibir información adicional</label>
+            </p>
+        </fieldset>
+        <fieldset id="envio">
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="reset" value="Limpiar campos">
+        </fieldset>
+    </form>
+</body>
+</html>

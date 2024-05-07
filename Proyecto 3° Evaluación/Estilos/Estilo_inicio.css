@@ -1,0 +1,21 @@
+p{
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+h2{
+    font-size:xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;  
+	color:salmon;
+}
+
+*{
+    background-color: bisque;
+    background-size: auto;
+    letter-spacing: 0.5 px;
+    margin-top: 0.5cm;
+    margin-right: 0.5cm;
+    margin-left: 0.5cm;
+    margin-bottom: 0.5cm;
+}

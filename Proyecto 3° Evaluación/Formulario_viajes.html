@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Proyecto 3° Evaluación/Estilos/formulario.css">
+    <script src="../Proyecto 3° Evaluación/Scripts/validacion.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <nav class="navbar background">
+        <div class="logo">
+            <img src="../Proyecto 3° Evaluación/Imagenes/formulario.png"
+                style="height: 50px;" alt="Logo">
+        </div>
+        <ul class="formnav_list">
+            <li><a href="/Proyecto 3° Evaluación/Index.html" target="_blank"> Índice</a></li>
+            <li><a href="/Proyecto 3° Evaluación/Varsovia.html" target="_blank"> Varsovia </a></li>
+            <li><a href="/Proyecto 3° Evaluación/Cracovia.html" target="_blank"> Cracocia</a></li>
+        </ul>
+    </nav>
+    <h2> Formulario de viajes</h2>
+    <p>
+        Cuéntame ahora, ¿Cuál ha sido el último viaje que has realizado en Europa?
+        Por favor, rellena los campos que aparecen abajo.
+        <form action="../Proyecto 3° Evaluación/datos_enviados1.html" id="formulario1" method="get" onsubmit="return validar_formulario_viajes1()"> 
+            <fieldset>
+                <legend> Contesta sobre cuál ha sido tu último viaje por Europa</legend>
+                <label for="campo1"> Último país que has visitado 
+                    <select name="paises" id="opciones_paises">
+                        <option value="opcion">Selecciona una opción</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Belgica">Bélgica</option>
+                        <option value="Chipre">Chipre</option>
+                        <option value="Dinamarca">Dinamarca</option>
+                        <option value="España">España</option>
+                        <option value="Finlandia">Finlandia</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Grecia">Grecia</option>
+                        <option value="Hungria">Hungría</option>
+                        <option value="Irlanda">Irlanda</option>
+                        <option value="Italia">Italia</option>
+                        <option value="Luxemburgo">Luxemburgo</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Holanda">Países Bajos</option>
+                        <option value="Polonia">Polonia</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="ReinoUnido">Reino Unido</option>
+                        <option value="Alemania">Alemania</option>
+                        <option value="Rumanía">Rumanía</option>
+                        <option value="Suecia">Suecia</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Letonia">Letonia</option>
+                        <option value="Lituania">Lituania</option>
+                        <option value="Chequia">República Checa</option>
+                        <option value="Eslovaquia">Eslovaquia</option>
+                        <option value="Eslovenia">Eslovenia</option>
+                        <option value="Croacia">Croacia</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Serbia">Serbia</option>
+                        <option value="Montenegro">Montenegro</option>
+                        <option value="Macedonia">Macedonia</option>
+                        <option value="Bosnia">Bosnia y Herzegovina</option>
+                        <option value="Rusia">Rusia</option>
+                        <option value="Suiza">Suiza</option>
+                        <option value="Bielorrusia">Bielorrusia</option>
+                        <option value="Ucrania">Ucrania</option>
+                        <option value="Noruega">Noruega</option>
+                    </select>
+                    <p>
+                    </label>
+                    <label for="monumento" > Monumento que más te gustó: 
+                        <input type="text" id="monumento" name="monu" placeholder="Teclea el monumento que más te gustó">
+                    </label>
+                    </p>
+                <p>
+                    <label for="comida"> Comida que más te gustó: 
+                    <input type="text" id="comida" name="comida" placeholder="Introduce la comida que más te gustó">
+                    </label>
+                </p>
+                <p>
+                    <label for="nogusta"> Algo que no te gustase: </label>
+                    <input type="text" id="nogusta" name="nogusta" placeholder="Teclea qué no te gustó">
+                </p>
+                <p>
+                    <label for="fecha">¿En qué fecha hiciste dicho viaje?
+                        <input type="date" id="fecha">
+                    </label>
+                </p>
+                <label><input type="submit" id="enviar1" value="Enviar"></label> 
+                <label><input type="reset" id="borrar1" value="Limpiar campos"></label>
+            </fieldset>
+        </form>
+    </p>
+    <h2> Mantengámos el contacto</h2>
+        <p>
+            Rellena el formulario que aparece abajo para poder mantener el contacto, y si surge, realizar algún 
+            viaje juntos por Europa. 
+        </p>
+        <form action="../Proyecto 3° Evaluación/datos_enviados2.html" id="formulario2" method="get" onsubmit="return validar_formulario_viaje2()">
+            <fieldset>
+                <legend>Escribe por favor tus datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+            <p>
+                <label for="apellidos"> Apellidos </label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos">
+            </p>
+            <p>
+                <label for="correo"> Email</label>
+                <input type="email" name="correo" id="email" placeholder="Introduce tu email" required>
+            </p>
+            <p>
+                <label for="telef"> Teléfono</label>
+                <input type="tel" name="telf" id="phone" placeholder="Introduce tu teléfono">
+            </p>
+            <p>
+                <button type="submit" id="enviar2">Enviar</button>
+                <button type="reset" id="borrar2">Limpiar campos</button>
+
+            </p>
+            </fieldset>
+        </form>
+    </p>
+</body>
+</html>

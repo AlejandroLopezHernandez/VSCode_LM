@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <script src="./js/script.js" ></script>  
+</head>
+<body>
+    <div class="container">
+    <h2>Formulario de registro</h2>
+        <form action="registro.html" metod="get" onsubmit="return validarFormulario()">
+            <fieldset id="personales">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="Nombre" required placeholder="Nombre" pattern="[A-Za-z]{1,25}" autofocus="autofocus">
+                
+                <label for="apellidos">Apellidos</label>
+                 <input type="text" id="apellidos" name="Apellidos" required  placeholder="Apellidos" >
+
+                <label for="contrasena">Contraseña</label>
+                <input type="password"  id="contrasena" name="contrasena" required  placeholder="Password" onblur="">
+        
+                <label for="ciudad">Ciudad</label>
+                    <select id="ciudad" name="ciudad">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Toledo">Toledo</option>
+                        <option value="Ávila">Ávila</option>
+                    </select>
+                <br><br><label><input type="checkbox" value="InformacionSi" name="InformacionSi" id="informacionSi"/> Deseo recibir información adicional</label>
+                <br><br><label><input type="checkbox" value="InformacionNo" name="InformacionNo" id="informacionNo"/> NO deseo recibir información adicional</label>
+            </fieldset>
+
+        <fieldset id="edad">
+         <label>Indica la edad </label><br>
+            <input  type="radio" class="linea" value="<18" name="pregunta" id="<18" onclick=""/> <span>Menor 18</span> 
+            <input type="radio" class="linea" value="18-30" name="pregunta" id="18-30" onclick="" /> <span>Entre 18 y 30</span>
+            <input type="radio" class="linea" value=">30" name="pregunta" id=">30" onclick=""/>  <span> Mayor  30</span>
+        </fieldset>
+
+        <fieldset id="sugerencias">
+            <label for="asunto">Sugerencias</label>
+            <textarea id="comentarios" name="subject" maxlength="200" required placeholder="Dame tu opinión" style="height:180px"></textarea>
+        </fieldset>
+
+         <fieldset id="envio">
+            <input type="submit" value="Enviar Datos">
+            <input type="reset" value="Limpiar" style="float: right;">
+        </fieldset>
+        </form>
+
+    </div>
+ </body>
+ </html>
+    

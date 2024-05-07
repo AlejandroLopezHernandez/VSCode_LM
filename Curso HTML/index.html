@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    
+    <title>Curso HTML de Midudev</title>
+</head>
+<!-- Así se hacen comentarios en HTML-->
+<body>
+
+    <style>
+        body{
+            background: rgb(173, 173, 228);
+        }
+    </style>
+    <header>
+        <nav>
+            <p>
+            <a href="#portfolio"> portfolio</a> <!-- enlaces internos-->
+            </p>
+            <a href="#formulario"> Ir al formulario de mi página web</a>
+            <p>
+        </nav>
+    </header>
+    <h1 id="portfolio"> Portfolio de Alejandro López</h1>
+    <p>
+        Estudiante de <strong> Desarrollo de Aplicaciones Web</strong> en el 
+        IES El Cañaveral de Móstoles
+    </p>
+    <h2> Experiencia profesional</h2>
+    <ul>
+        <li class= "listas "> Teleoperador de Nespresso - 2017 </li>
+        <li class= "listas"> Kitchen porter en Mánchester - 2018</li>
+        <li class= "listas"> Azafato de vuelo en Ryanair - 2018 </li>
+    </ul>
+     <!--hidden funciona para ocultar elementos-->
+    <img
+    loading="lazy"
+    title="Foto de una iglesia en Macador,Mallorca"
+    alt="Una imagen de una iglesia de Manacor" 
+    src="/Curso HTML/1692101428664.jpg" height="700" width="450">
+    <aside>
+        <!-- esta etiqueta se usa para marcar algo que está separado del contenido principal,
+        algo que está anexo a ese contenido-->
+    </aside>
+    <section>
+        <!-- se usa para abarcar secciones genéricas de un documento, puede haber secciones
+        dentro de una sección-->
+    </section>
+    <article>
+        <!--contenido que podría ser como un bloque independiente de información,
+        se podría copiar y pegar en cualquier otro sitio sin ningún problema  -->
+    </article>
+    <main>
+        <!-- Esta etiqueta es única en la página web, es una etiqueta muy especial, se usa para
+        mostrar el contenido principal de la página-->
+    </main>
+    <footer>
+        <!-- Esta etiqueta se usa para representar el conteniedo que está a pie de
+        páagina en la página web-->
+    </footer>
+    <p>
+        <h2 id="formulario"> Formulario de contacto</h2>
+        <form method="post" action="/">
+            <fieldset> <!-- se usa esta etiqueta para agrupar diferentes inputs-->
+                <legend> Esto es una leyenda para pedirle algo al usuaario</legend>
+                <label for="nombre1"> Campo para decir qué se quiere pedir</label>
+                <input type="text" id="nombre1" name="nombre" placeholder="escribe lo que quieras"> <!-- caja de texto para pedir algo-->
+               
+                <p>
+                <label for="email"> Introduce tu correo electrónico</label>
+                <input type="email" id="email" name="correo" placeholder="Introoduce tu email ">
+                </p>
+                <!-- Otra forma de darle click al nombre y que te aparezca es esta:-->
+
+                <p>
+                    <label> Escribe lo que quieras
+                        <input type="text" name="nombre2" placeholder="escribe si quieres" required> <!-- indica que ese campo es obligatorio-->
+                    </label>
+                </p>
+                <p>
+                    <datalist>
+                        <option value="Javascript"></option>
+                        <option value="Java"></option>
+                        <option value="SQL"></option>
+                        <option value="Python"></option>
+                    </datalist>
+                </p>
+                <p>
+                    <button type="submit"> Enviar datos</button>
+                    <input type="submit" value="enviar formulario">
+                    <input type="reset" value="limpiar los campos">
+                </p>
+            </fieldset>
+        </form>
+    </p>
+     
+   <video controls src="/Ejercicio Web Marte/Videos/Perseverance_Rover_Zooms_in_on_Ancient_Mars_River-1280.mp4"> </video>
+</body>
+</html>

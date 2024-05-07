@@ -1,0 +1,18 @@
+body::after{
+   display: flex;
+   justify-self: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0%;
+   text-align: center;
+   content: "";
+   background-image: url(../50e7dbb1953e4631967a40c1cf4fded3.png);
+   background-size:cover;
+   opacity: 0.5;
+   top:0;
+   left:0;
+   bottom:0;
+   right:0;
+   position:absolute;
+   z-index: -1;
+}

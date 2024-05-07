@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Ejercicios Formualrios/validacion1.js" ></script>
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <h1> Ejercicio 1</h1>
+    <form action="/Ejercicios Formularios/enviado.html" onsubmit="return validar1()">
+        <fieldset>
+            <legend> Rellenar </legend>
+             <p>
+            <label> <input type="radio" name="idioma" value="inglés"> Inglés</label>
+             </p>
+             <p>
+                <label> <input type="radio" name="idioma" value="francés">Francés </label>
+             </p>
+             <p>
+                <label> <input type="radio" name="idioma" value="cat"> catalán</label>
+             </p>
+           <select name="conector">
+            <option value="usb"> USB</option>
+            <option value="paraleo">paralelo</option>
+            <option value="hdmi"> hdmi</option>
+           </select>
+           <p>
+            <label for="name" id="nombre" name="nombre"> Nombre
+                <input type="text" id="name" name="name">
+            </label>
+           </p>
+           <label for="surname" id="apellido">Apellidos
+            <input type="text" id="surname" name="surname">
+           </label>
+        </fieldset>
+        <fieldset>
+            <legend> Indique sus preferencias </legend>
+            <select id="sexo">
+                <optgroup label="sexo">
+                    <option value="1">Selecciona una opción</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </optgroup>
+            </select>
+            <p>
+                <label>Hombre
+                    <input type="checkbox" class="sexo" name="hombre" value="hombre">
+                </label>
+            </p>
+            <p>
+                <label>Mujer
+                    <input type="checkbox" class="sexo" name="mujer" value ="mujer">
+                </label>
+            </p>
+            <p>
+                <label id="fecha"> Elige una fecha:
+                    <input type="date" name="fecha">
+                </label> 
+            </p>
+            <button type="submit" value="enviar">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

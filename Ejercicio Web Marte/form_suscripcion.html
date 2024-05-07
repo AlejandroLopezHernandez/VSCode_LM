@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Mars | Suscription</title>
+  <script src="js/validarSubmit3.js"></script> 
+</head>
+<body>
+    <header id="mainheader">
+        <h1 id="header-text">Misión a Marte</h1>
+    </header>
+
+    <section id="subscription">
+     <div class="container">
+      <div id="form_header">
+        <h1>¿Te gustaría vivir en Marte?</h1>
+        <p class="large">Puedes ayudarnos a hacer avanzar a la humanidad hacia ese objetivo participando en una misión simulada a la superficie de Marte de un año de duración.</p>
+      </div>
+      <div id="form_inputs">
+       <form id="form_suscripcion"  action="confirma_suscripcion.html" metod="get" onsubmit="return validarFormulario()">
+
+        <div id="datos">
+     
+          <label class="personal" for="nombre">Nombre y apellidos</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Nombre y apellidos" minlength="3"  pattern="[A-Za-z]{1,25}+[A-Za-z]{1,25}" >
+
+
+          <label class="personal" for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Introducir email..." required>
+   
+
+          <label class="personal" for="region">Región</label>
+          <select id="region" name="region" >
+              <option value="">Seleccione una opcion</option>
+              <option value="EuropaAsia">Europa y Asia</option>
+              <option value="Africa">Africa</option>
+              <option value="AmericaAustralia">America y Australia</option>
+          </select>
+  
+        </div>
+
+        <div id="interes">
+            <label><input  type="radio" class="linea" value="personal" name="pregunta" id="personal" onclick=""/> <span>Personal</span> </label>
+            <label><input type="radio" class="linea" value="profesional" name="pregunta" id="profesional" onclick="" /> <span>Profesional</span></label>
+        </div>
+
+        <div id="condiciones">
+            <label><input type="checkbox" class="bloque" value="acepto" name="acepto" id="acepto"/> Aceptar condiciones</label>
+            <label><input type="checkbox" class="bloque" value="informacion" name="informacion" id="informacion"/> Recibir información adicional</label>
+        </div>
+
+        <div id="botones">
+          <button class="suscribe_btn">Enviar</button>
+          <button type="reset" class="suscribe_btn">Reset</button>
+        </div>     
+
+        <p id="error"></p>
+      </form>
+     </div>
+    </div>
+   </section>
+ 
+</body>
+</html>

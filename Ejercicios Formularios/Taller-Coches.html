@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Ejercicios Formularios/validacion_taller.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2> Ejercicio Taller de coches </h2>
+    <form action="/Ejercicios Formularios/datos_enviados.html" onsubmit="return validar_taller()">
+        <fieldset>
+            <legend> Conteste los siguientes detalles para su revisión</legend>
+            <p>
+                <label for="nombre"> Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre">
+            </p>
+           <p>
+            <label for="email"> Email: </label>
+            <input type="email" name="email" id="email" placeholder="Introduzca su email">
+           </p>
+           <p>
+            <label for="anyomatricula"> Año de matriculación: </label>
+            <input type="number" name="anyo" id="anyomatricula" value="2014" placeholder="Introduzca el año de matriculación del vehículo">
+           </p>
+           <p>
+            <label for="observaciones">Observaciones: </label>
+            <textarea name="observaciones" id="observaciones" rows="6" cols="45">
+            </textarea>
+           </p>
+           <p>
+            <label for="seguro"> Tipo de seguro: </label>
+            <input type="radio" value="Terceros" class="seguro" name="seguro"> Terceros
+            <input type="radio" value="todo" class="seguro" name="seguro"> Todo riesgo
+           </p>
+           <p>
+            <label for="phone"> N° de teléfono: </label>
+            <input type="tel" id="phone" placeholder="Introduzca n° de teléfono">
+           </p>
+           <p>
+            <label for="horario"> Rango horario para llamar: </label>
+            <input type="radio" name="horario"> 8 - 12
+            <input type="radio" name="horario"> 12 - 14
+            <input type="radio" name="horario"> 16 - 20
+           </p>
+           <p>
+            Clase de intervención: 
+            <select id="intervencion" name="intervencion">
+                <option value="opcion"> Elija una opción</option>
+                <option value="bateria-coche"> Cambio de batería</option>
+                <option value="intermitente">Cambio de luces/ intermitentes</option>
+                <option value="rueda">Cambio de rueda</option>
+            </select>
+          
+           </p>
+           <label for="enviar">
+            <input type="submit" value="Enviar">
+           </label>
+           <label for="limpiar">
+            <input type="reset" value="Limpiar campos">
+           </label>
+        </fieldset>
+    </form>
+</body>
+</html>

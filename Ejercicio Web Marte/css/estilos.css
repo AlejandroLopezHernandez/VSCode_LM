@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+  background: url('../img/future.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { 
+  font-size: 2rem; 
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+h4 { font-size: 1.5rem; }
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+}
+
+a { text-decoration: none; }
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.large { font-size: 1.25rem; }
+
+
+/* Header */
+#mainheader {
+  height: 15vh;
+}
+#header-text{
+  text-align:center;
+}
+
+#video{
+  text-align:center;
+}
+/* Subscription */
+#subscription {
+  width: 620px;
+  margin: 15px auto;
+}
+
+#form_header h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+#form_header p {
+  padding: 30px;
+  text-align: center;
+}
+
+#datos, #interes,#condiciones,#botones{
+  text-align: center;}
+
+
+#subscription input[type=text],
+ input[type=email],input[type=date],select{
+  width: 60%;
+  padding: 10px;
+  border: 1px #ddd solid;
+  border-radius: 6px;
+  color:black;
+  font-size:1rem;
+  margin : 15px;
+
+}
+
+#region{
+  border: 1px solid #ccc; 
+  border-radius: 25px; 
+  }
+
+#subscription input:focus,select:focus {
+    background-color:rgb(243, 222, 172); 
+  
+}
+
+.suscribe_btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #FFC038;
+  padding: 13px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  margin:10px;
+}
+
+.suscribe_btn:hover {
+  background: #cc992c;
+}
+
+.personal{
+  display: block;
+  font-size: medium ;
+  font-weight: bold;
+   }                          
+           
+
+.linea{
+ display: inline-block;
+ margin:10px;
+}
+.bloque{
+  margin:10px;
+ 
+ }
+
+/* Mensajes de error */
+#error {
+  display:block;
+  width: 100%;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style:italic;
+  color:orange;
+  border-radius: 0 0 5px 5px;
+  text-align:center;
+
+}
+

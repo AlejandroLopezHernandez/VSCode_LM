@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Ejercicios Formularios/validar3.js"></script>
+    <title>Formulario 3</title>
+</head>
+<body>
+    <h2>Formulario 3</h2>
+    <form action="/Ejercicios Formularios/enviado.html" onsubmit="return validar3()">
+        <fieldset>
+        <legend>Completrar</legend>
+            <label for="color">Elija un color</label>
+        <input type="color" name="color">
+        <p>
+            <textarea name="textarea" rows="5" cols="53">
+                Por favor, escriba un texto aquí
+            </textarea>
+        </p>
+        <p>
+            <select name="lenguaje">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="visual">Visual Basic</option>
+            </select>
+        </p>
+        <p>
+            <label for="ciclo">
+                <input type="checkbox" value="cicloasir" name="ciclo">ASIR
+                <input type="checkbox" value="ciclodam" name="ciclo">DAM
+                <input type="checkbox" value="ciclodaw" name="ciclo">DAW
+            </label>
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>Rellena las siguientes opciones</legend>
+            <p>
+                <label for="fecha"> Elija una fecha
+                    <input type="date" name="fecha">
+                </label>
+            </p>
+            <p>
+                <label for="file">
+                    Elija un fichero
+                    <input type="file" name="file">
+                </label>
+            </p>
+            <select name="ciclo">
+                <option value="SMIR">SMIR</option>
+                <option value="ASIR">ASIR</option>
+                <option value="DAM">DAM</option>
+                <option value="DAW">DAW</option>
+            </select>
+            
+            <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

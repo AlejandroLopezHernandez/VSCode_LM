@@ -1,0 +1,8 @@
+{
+    "nombre":"John",
+    "apellidos":"Smith",
+    "edad":22,
+    "dirección":[{"calle":"Gran Vía 22"}, {"ciudad":"Madrid"}, {"estado":"28943", "nombre":"Mad"}],
+    "telefono":[{"tipo casa":2125551234}, {"tipo fax": 123456789}]
+
+}

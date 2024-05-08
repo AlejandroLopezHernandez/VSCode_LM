@@ -1,0 +1,8 @@
+{
+    "grupo":"DAW1",
+    "curso":2019,
+    "Evaluación":"segunda",
+    "Alumnos":[{"nombre":"Matilde","apellidos":"Pozo"},
+               {"nombre":"Christian","apellidos":"Perullo"},                                     
+                {"nombre":"Alejandro", "apellidos":"López"}]
+}

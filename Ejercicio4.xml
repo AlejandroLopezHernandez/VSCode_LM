@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDs>
+    <Still>
+        <titulo>Still got the blues</titulo>
+        <artista>Gary Moore</artista>
+        <pais>UK</pais>
+        <comaynia>Virgin Records</comaynia>
+        <precio>10.20</precio>
+    </Still>
+    <onenight>
+        <titulo>One night only</titulo>
+        <artista>Bee Gees</artista>
+        <pais>UK</pais>
+        <comaynia>Polydor</comaynia>
+        <precio>10.90</precio>
+    </onenight>
+    <whenAman>
+        <titulo>When a man loves a woman</titulo>
+        <artista>Percy Sledge</artista>
+        <pais>USA</pais>
+        <comaynia>Atlantic</comaynia>
+        <precio>8.70</precio>
+    </whenAman>
+    <bigWillie>
+        <titulo>Big Willie style</titulo>
+        <artista>Will Smith</artista>
+        <pais>USA</pais>
+        <comaynia>Columbia</comaynia>
+        <precio>9.90</precio>
+    </bigWillie>
+    <laCancion>
+        <titulo>La canción de Juan Perro</titulo>
+        <artista>Radio Futura</artista>
+        <pais>España</pais>
+        <comaynia>Sony Music-Arioa</comaynia>
+        <precio>9.90</precio>
+    </laCancion>
+    <theDock>
+        <titulo>The dock of the bay</titulo>
+        <artista>Otis Redding</artista>
+        <pais>USA</pais>
+        <comaynia>Atlatic</comaynia>
+        <precio>7.90</precio>
+    </theDock>
+</CDs>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura>
+    <campo1izq>
+        <nombre>Equipos Digitales S.L</nombre>
+        <direccion>Av. Valladolidad</direccion>
+        <ciudad>Madrid 28015</ciudad>
+        <cif>C.I.F Q-9876543</cif>
+        <telefono> teléfono :917776688</telefono>
+        <fax> fax: 917776699</fax>
+    </campo1izq>
+    <campo1der>
+        <fecha>Fecha:12-01-2020</fecha>
+        <pedido>Pedido n* 731</pedido>
+        <pago>Forma de pago: EFECTIVO</pago>
+    </campo1der>
+    <datosClciente>
+        <numero>nº cliente: 879 </numero>
+        <nombre>Nombre: Darío Bueno Gutiérrez</nombre>
+        <direccion>Dirección de envío: Av. Oporto nº7 4ºd </direccion>
+        <poblacion>Población: Madrid cod. postal:28043 </poblacion>
+        <provincia>Provincia: Madrid </provincia>
+    </datosClciente>
+    <datosFactura>
+        <fila1>
+            <referencia>MII93000F/8 </referencia>
+            <descripcion> MICRO PENTIUM IV 3000MHZ FB800</descripcion>
+            <cantidad>1 </cantidad>
+            <precio>230€ </precio>
+            <iva> 16.0</iva>
+            <importe> 266.80€</importe>
+        </fila1>
+        <fila2>
+            <referencia>MB8QDIP4 </referencia>
+            <descripcion> PLACA BASE QDI P4</descripcion>
+            <cantidad>1 </cantidad>
+            <precio> 180€</precio>
+            <iva> 16.0</iva>
+            <importe> 208.80€</importe>
+        </fila2>
+        <fila3>
+            <referencia>MEDD512M32</referencia>
+            <descripcion> DIMM DDR 512MB 3200</descripcion>
+            <cantidad>2 </cantidad>
+            <precio> 40€</precio>
+            <iva> 16.0</iva>
+            <importe>92.80€ </importe>
+        </fila3>
+        <fila4>
+            <referencia> HD250GSA7</referencia>
+            <descripcion> DISCO DURO 250GB S-ATA 7200</descripcion>
+            <cantidad> 4</cantidad>
+            <precio> 120€</precio>
+            <iva>16.0 </iva>
+            <importe> 556.80€</importe>
+        </fila4>
+        <fila5>
+            <base> Base imponible</base>
+            <iva> %iva</iva>
+            <cuota> cuota IVA</cuota>
+        </fila5>
+        <fila6>
+            <numero1> 970.00€</numero1>
+            <numero2> 16.0</numero2>
+            <numero3> 155.20€</numero3>
+        </fila6>
+        <fila7>
+            <total>1125.20€</total>
+        </fila7>
+    </datosFactura>
+</factura>

@@ -1,0 +1,10 @@
+{
+    "mensaje1":[{"asunto":"Hacer pedido"},{"destinatario":"Apple"},
+                {"remitente":"Tienda Apple ParqueSur"},{"fecha":"12-05-2024"},
+                {"contenido":"Cagadores, Cables, sillas"},{"categoria":"Pedido"},{"importancia":"Mediana"}],
+
+    "mensaje2":[{"asunto":"Hacer pedido"},{"destinatario":"Zara"},
+                {"remitente": "Zara Gran Vía"}, {"fecha":"11-05-2024"},
+                {"contenido":"camisetas, chaquetas, pantalones"},{"categoria":"Pedido"}, {"importancia": "Baja"}]
+
+}
